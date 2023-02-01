@@ -1,0 +1,3 @@
+/Users/nominsendinu/Desktop/NSBM/Y1/C/Coding/cmake-build-debug/CMakeFiles/Coding.dir
+/Users/nominsendinu/Desktop/NSBM/Y1/C/Coding/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nominsendinu/Desktop/NSBM/Y1/C/Coding/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -196,7 +196,7 @@ void markgrd(){
     printf("enter your marks for module 1 & 2: ");
     scanf("%d %d", &mrk1,&mrk2);
 
-    
+    printf("Here Moving to Result Section");
     //AND
 
     if(mrk1>=50 && mrk2>=50){
@@ -1075,22 +1075,22 @@ void lab_sheet_07(){
 
 }
 
-void multi_array_02(){
+void multi_array_02() {
     //Declare a multi dimensional array with a size of 3 rows 4 colomns
     //input values into the array and display the values in the form of matrix
     int array[3][4];
-    for (int i=0;i<3;i++){
-        for(int j=0;j<4;j++){
-            printf("Enter value for Array[%d][%d] :",i,j);
-            scanf("%d",&array[i][j]);
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 4; j++) {
+            printf("Enter value for Array[%d][%d] :", i, j);
+            scanf("%d", &array[i][j]);
         }
     }
 
     printf("\nArray Form: \n");
 
-    for (int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            printf("%d ",array[i][j]);
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", array[i][j]);
 
         }
         printf("\n");
@@ -1098,101 +1098,93 @@ void multi_array_02(){
 
     printf("\nArray Minors:\n\n");
 
-    int min_arr[2][2]={},iter_1=0,iter_2=0;
-
-    //omiting algo:
-
-    for(int i=0;i<3;i++){
-        if(i==0){
-            continue;
-        }
-        for(int h=0;h<3;h++){
-            if(h==0){
-                continue;
-            }
-            min_arr[i-1][h-1]=array[i][h];
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//FOR START
-    for (int y=0;y<3;y++){
-        switch(y){
+    for (int y = 0; y < 3; y++) {
+        switch (y) {
             case 0:
                 for (int t = 0; t < 3; t++) {
-                    switch(t){
+                    switch (t) {
                         case 0:
-                            printf("%d %d\n%d %d\n\n", array[y+1][t+1],array[y+1][t+2],array[y+2][t+1],array[y+2][t+2]);
+                            printf("%d %d\n%d %d\n\n", array[y + 1][t + 1], array[y + 1][t + 2], array[y + 2][t + 1],
+                                   array[y + 2][t + 2]);
                             break;
                         case 1:
-                            printf("%d %d\n%d %d\n\n",array[y+1][t-1],array[y+1][t+1],array[y+2][t-1],array[y+2][t+1]);
+                            printf("%d %d\n%d %d\n\n", array[y + 1][t - 1], array[y + 1][t + 1], array[y + 2][t - 1],
+                                   array[y + 2][t + 1]);
                             break;
                         case 2:
-                            printf("%d %d\n%d %d\n\n",array[y+1][t-2],array[y+1][t-1],array[y+2][t-2],array[y+2][t-1]);
+                            printf("%d %d\n%d %d\n\n", array[y + 1][t - 2], array[y + 1][t - 1], array[y + 2][t - 2],
+                                   array[y + 2][t - 1]);
                             break;
-                    }}
+                    }
+                }
                 break;
             case 1:
                 for (int t = 0; t < 3; t++) {
-                    switch(t){
+                    switch (t) {
                         case 0:
-                            printf("%d %d\n%d %d\n\n",array[y-1][t+1],array[y-1][t+2],array[y+1][t+1],array[y+1][t+2]);
+                            printf("%d %d\n%d %d\n\n", array[y - 1][t + 1], array[y - 1][t + 2], array[y + 1][t + 1],
+                                   array[y + 1][t + 2]);
                             break;
                         case 1:
-                            printf("%d %d\n%d %d\n\n",array[y-1][t-1],array[y-1][t+1],array[y+1][t-1],array[y+1][t+1]);
+                            printf("%d %d\n%d %d\n\n", array[y - 1][t - 1], array[y - 1][t + 1], array[y + 1][t - 1],
+                                   array[y + 1][t + 1]);
                             break;
                         case 2:
-                            printf("%d %d\n%d %d\n\n",array[y-1][t-2],array[y-1][t-1],array[y+1][t-2],array[y+1][t-1]);
+                            printf("%d %d\n%d %d\n\n", array[y - 1][t - 2], array[y - 1][t - 1], array[y + 1][t - 2],
+                                   array[y + 1][t - 1]);
                             break;
-                    }}
+                    }
+                }
                 break;
             case 2:
                 for (int t = 0; t < 3; t++) {
-                    switch(t){
+                    switch (t) {
                         case 0:
-                            printf("%d %d\n%d %d\n\n",array[y-2][t+1],array[y-2][t+2],array[y-1][t+1],array[y-1][t+2]);
+                            printf("%d %d\n%d %d\n\n", array[y - 2][t + 1], array[y - 2][t + 2], array[y - 1][t + 1],
+                                   array[y - 1][t + 2]);
                             break;
                         case 1:
-                            printf("%d %d\n%d %d\n\n",array[y-2][t-1],array[y-2][t+1],array[y-1][t-1],array[y-1][t+1]);
+                            printf("%d %d\n%d %d\n\n", array[y - 2][t - 1], array[y - 2][t + 1], array[y - 1][t - 1],
+                                   array[y - 1][t + 1]);
                             break;
                         case 2:
-                            printf("%d %d\n%d %d\n\n",array[y-2][t-2],array[y-2][t-1],array[y-1][t-2],array[y-1][t-1]);
+                            printf("%d %d\n%d %d\n\n", array[y - 2][t - 2], array[y - 2][t - 1], array[y - 1][t - 2],
+                                   array[y - 1][t - 1]);
                             break;
-                    }}
+                    }
+                }
 
                 break;
 
 
-
-
-            }
+        }
 
     }
-//FOR END
 
 }
 
 
+
 void multi_arry_02(){
-    //declare 2 multidimensional arrays with the size of 2 x 3
-    //input values into the array, calculate mattrix sum and display it
+
+    int arry1[3][3],arry2[3][3],sum[3][3];
+    for (int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            printf("give 2 inputs for [%d][%d]: ",i,j);
+            scanf("%d %d", &arry1[i][j],&arry2[i][j]);
+            sum[i][j]=0;
+            sum[i][j]=arry1[i][j]+arry2[i][j];
+        }
+    }
+    printf("Sum: \n\n");
+
+    for (int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            printf("%4d",sum[i][j]);
+        }
+        printf("\n");
+    }
+    
 }
 
 
@@ -1247,7 +1239,7 @@ int main(){
     //prac05();
     //multiarry();
     //lab_sheet_07();
-    //multi_array_02();
+    multi_arry_02();
 
 
 

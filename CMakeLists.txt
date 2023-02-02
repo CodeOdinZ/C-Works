@@ -4,4 +4,4 @@ project(Coding C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Coding
-        hello.c)
+        hello.c Matrix.c)
